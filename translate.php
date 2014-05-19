@@ -16,6 +16,9 @@ $messages = array(
 	'Pay' => 'Maksa',
 	'Cancel' => 'Peruuta',
 	'Confirm reservation' => 'Vahvista varaus',
+	'The reservation must be cancelled at least three hours before the start or the fee will be charged.' => 'Varaus on peruutettava vähintään kolme tuntia ennen sen alkua, tai se veloitetaan kokonaan luottokortiltasi.',
+	'Damages and fines from late returns are automatically charged from your credit card.' => 'Vahingot ja myöhästymissakot veloitetaan automaattisesti luottokortiltasi.',
+	'See <a href="#">pricing</a> for details.' => 'Katso lisätiedot <a href="#">hinnastosta</a>.',
 );
 
 function t($raw_message, $replacements = array()) {

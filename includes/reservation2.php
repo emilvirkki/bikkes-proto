@@ -17,12 +17,18 @@
 </div>
 
 
-<p><br>TODO Intro text</p>
+<p><br>
+<?php print t('The reservation must be cancelled at least three hours before the start or the fee will be charged.'); ?>
+
+<?php print t('Damages and fines from late returns are automatically charged from your credit card.'); ?>
+
+<?php print t('See <a href="#">pricing</a> for details.'); ?>
+</p>
 
 <br>
 
 
-<a href="index.php" class="btn btn-ok"><?php print t('Confirm reservation'); ?></a>
+<a href="index.php?func=reservation_confirm" class="btn btn-ok"><?php print t('Confirm reservation'); ?></a>
 <a href="index.php" class="btn btn-cancel"><?php print t('Cancel'); ?></a>
 
 </div>
