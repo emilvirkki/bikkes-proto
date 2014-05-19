@@ -27,6 +27,12 @@ body {
 	line-height: 40px;
 }
 
+#title a {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+}
+
 #nav {
 	background: #DDD;
 	overflow: auto;
@@ -46,8 +52,15 @@ body {
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	height: 100%;
 	z-index: 0;
+	overflow: hidden;
+}
+
+#map img {
+	max-height: 100%;
+	max-width: 200%;
+	overflow: hidden;
+	margin-left: -48%;
 }
 
 #reserve-button {
@@ -114,4 +127,13 @@ select {
 	height: 25px;
 	display: block;
 	width: 100%;
+}
+
+.message.success {
+	background: #9F9;
+	padding: 10px;
+}
+
+.reservation-info {
+	font-weight: bold;
 }

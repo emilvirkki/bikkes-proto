@@ -17,11 +17,11 @@ function head($product_name, $title = '', $tab = 1) {
 
 <div id="top">
 <div id="title">
-<?php print strtoupper($product_name); ?>
+<a href="index.php"><?php print strtoupper($product_name); ?></a>
 </div>
 
 <div id="nav">
-<a href="?func=from" class="tab-1"><?php print t('Reserve a Bikkes'); ?></a>
+<a href="?func=reserve" class="tab-1"><?php print t('Reserve a Bikkes'); ?></a>
 <a href="?func=reservations" class="tab-2"><?php print t('My Reservations'); ?></a>
 </div>
 </div>
@@ -35,4 +35,29 @@ function foot() {
 </body>
 </html>
 <?php	
+}
+
+function show_part($part, $message) {
+	$loc = htmlspecialchars($_SESSION['reservation'][$part . '_loc']);
+	$timestamp = strtotime($_SESSION['reservation'][$part . '_time']);
+	$date = date('d.m.Y', $timestamp);
+	$time = date('H:i', $timestamp);
+
+	print t($message, array(
+		'@location' => $loc,
+		'@date' => $date,
+		'@time' => $time
+	));
+}
+
+function show_reservation($show_from = TRUE) {
+?>
+<div class="reservation-info">
+	<?php if($show_from): ?>
+		<p><?php show_part('from', 'Get the bike from <a href="#">@location</a> on <strong>@date</strong> at <strong>@time</strong>.'); ?></p>
+	<?php endif; ?>
+	<p><?php show_part('to', 'Return it to <a href="#">@location</a> on <strong>@date</strong> at <strong>@time</strong>.'); ?></p>
+	
+</div>
+<?php
 }

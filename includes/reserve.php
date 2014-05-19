@@ -9,16 +9,21 @@
 <div class="field location">
 	<select name="from_loc">
 		<option><?php print t('Choose location...'); ?></option>
-		<option>Kamppi</option>
-		<option>Ruoholahti</option>
-		<option>???</option>
-		
+		<option><?php print t('Railway Station'); ?>, Elielinaukio</option>
+		<option>Töölö, Mannerheimintie 82</option>
+		<option>Punavuori: Kaivarin Kanuuna - Merikatu 3</option>
+		<option>Kruununhaka: Wiedermeier - Vironkatu 10</option>
+		<option>Kallio: Oivan Kirppis - Kolmas Linja 7</option>
+		<option>Töölö: DoM Itsepalvelukirpputori - Mannerheimintie 29</option>
+		<option><?php print t('Recycling center'); ?> Hietalahti, Lönnrotinkatu 45</option>
+		<option><?php print t('Recycling center'); ?> Kyläsaari, Kyläsaarenkatu 8</option>
+
 	</select>
 </div>
 <div class="field time">
 	<label>
 	<span><?php print t('At:'); ?></span>
-	<input type="datetime-local" name="from_time" min="<?php print date("Y-m-d\TH:00:00"); ?>" value="<?php print date("Y-m-d\TH:00:00"); ?>">
+	<input type="datetime-local" name="from_time" value="<?php print date("Y-m-d\TH:00:00"); ?>">
 	</label>
 </div>
 
@@ -35,7 +40,7 @@
 <div class="field time">
 	<label>
 	<span><?php print t('At:'); ?></span>
-	<input type="datetime-local" name="to_time" min="<?php print date("Y-m-d\TH:00:00"); ?>" value="<?php print date("Y-m-d\TH:00:00"); ?>">
+	<input type="datetime-local" name="to_time" value="<?php print date("Y-m-d\TH:00:00"); ?>">
 	</label>
 </div>
 
