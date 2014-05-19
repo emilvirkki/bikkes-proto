@@ -18,7 +18,7 @@
 <div class="field time">
 	<label>
 	<span><?php print t('At:'); ?></span>
-	<input type="datetime" name="from_time">
+	<input type="datetime-local" name="from_time">
 	</label>
 </div>
 
@@ -35,7 +35,7 @@
 <div class="field time">
 	<label>
 	<span><?php print t('At:'); ?></span>
-	<input type="datetime" name="to_time">
+	<input type="datetime-local" name="to_time">
 	</label>
 </div>
 
