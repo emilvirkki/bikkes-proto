@@ -18,7 +18,7 @@
 <div class="field time">
 	<label>
 	<span><?php print t('At:'); ?></span>
-	<input type="datetime-local" name="from_time" step="1800" min="<?php print date("Y-m-d\TH:00:00"); ?>" value="<?php print date("Y-m-d\TH:00:00"); ?>">
+	<input type="datetime-local" name="from_time" min="<?php print date("Y-m-d\TH:00:00"); ?>" value="<?php print date("Y-m-d\TH:00:00"); ?>">
 	</label>
 </div>
 
@@ -35,7 +35,7 @@
 <div class="field time">
 	<label>
 	<span><?php print t('At:'); ?></span>
-	<input type="datetime-local" name="to_time" step="1800" min="<?php print date("Y-m-d\TH:00:00"); ?>" value="<?php print date("Y-m-d\TH:00:00"); ?>">
+	<input type="datetime-local" name="to_time" min="<?php print date("Y-m-d\TH:00:00"); ?>" value="<?php print date("Y-m-d\TH:00:00"); ?>">
 	</label>
 </div>
 
